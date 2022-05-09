@@ -1,0 +1,8 @@
+00NOTA2022125-04-2022 20:04:5501
+02CCO  02211042Lucas Henrique                                    Banco de dados                          09,00004
+02SIS  02211055Rafaella Amancio                                  Banco de dados                          09,00002
+02CCO  02211017Flavia Oliveira                                   Banco de dados                          09,30002
+02REDES02211031Isabella Souza                                    Banco de dados                          09,50001
+02CCO  02211002Ana Freitas                                       Banco de dados                          10,00000
+02ADS  02211019Gabriel Lima                                      Banco de dados                          08,50001
+010000000006
