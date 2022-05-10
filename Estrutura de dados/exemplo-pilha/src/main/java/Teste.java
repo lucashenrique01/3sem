@@ -1,8 +1,8 @@
 public class Teste {
 
-    public static Boolean isPalindromo(int[] vet){
+    public static Boolean isPalindromo(Integer[] vet){
         Pilha pilha = new Pilha(vet.length);
-        for(int elemento : vet){
+        for(Integer elemento : vet){
             pilha.push(elemento);
         }
         for(int i = 0; i < vet.length;i++){
@@ -11,6 +11,11 @@ public class Teste {
             }
         }
         return true;
+    }
+
+    public static int[] decimalToBinary(int[] vet){
+        Pilha pilha = new Pilha(vet.length);
+        return null;
     }
 
     public static void main(String[] args) {
@@ -32,9 +37,9 @@ public class Teste {
         System.out.println(pilha.isEmpty());
         System.out.println(pilha.isFull());
         System.out.println(pilha.peek());
-        int[] vet1 = {1,3,3,1};
-        int[] vet2 = {1,2,3,1};;
-        int[] vet3 = {1,2,4,3,4,2,1};
+        Integer[] vet1 = {1,3,3,1};
+        Integer[] vet2 = {1,2,3,1};;
+        Integer[] vet3 = {1,2,4,3,4,2,1};
 
         System.out.println(isPalindromo(vet1));
         System.out.println(isPalindromo(vet2));

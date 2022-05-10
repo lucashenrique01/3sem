@@ -1,46 +1,41 @@
-public class Pilha {
+public class Pilha <T>{
 
-    private Integer[] vetor;
+    private T[] pilha;
     private Integer topo;
 
     public Pilha(int tam) {
-        vetor = new Integer[tam];
+        pilha = (T[]) new Object[tam];
         this.topo = -1;
     }
 
     public boolean isEmpty(){
         return this.topo == -1;
-//        if(topo == -1){
-//            return true;
-//        }else {
-//            return false;
-//        }
     }
 
     public boolean isFull(){
-        return this.topo == vetor.length -1;
+        return this.topo == pilha.length -1;
     }
 
-    public void push(int info){
+    public void push(T info){
         if(!isFull()){
             this.topo++;
-            this.vetor[topo] = info;
+            this.pilha[topo] = info;
         }else {
             System.out.println("Pilha cheia");
         }
     }
 
-    public Integer pop(){
+    public T pop(){
         if(!isEmpty()){
-            return this.vetor[topo--];
+            return this.pilha[topo--];
         }else {
             return null;
         }
     }
 
-    public Integer peek(){
+    public T peek(){
         if(!isEmpty()){
-            return this.vetor[topo];
+            return this.pilha[topo];
         }else {
             return null;
         }
@@ -48,10 +43,14 @@ public class Pilha {
 
     public void exibe(){
         if(!isEmpty()){
-            for(Integer elemento : vetor) System.out.println(elemento);;
+            for(T elemento : pilha) System.out.println(elemento);;
         }else{
             System.out.println("Pilha vazia");
         }
+    }
+
+    public Pilha <T> multiPop (int n){
+        return null;
     }
 
 
