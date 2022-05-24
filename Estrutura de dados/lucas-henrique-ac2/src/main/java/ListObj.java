@@ -93,7 +93,7 @@ public class ListObj<T> {
         }else {
          Integer posicao = this.nroElem/2;
 
-         for(int i = this.nroElem; i < posicao;i--){
+         for(int i = this.nroElem; i > posicao;i--){
              this.vetor[i] = this.vetor[i-1];
          }
          this.vetor[posicao] = novoElemento;
